@@ -16,7 +16,6 @@
     <Compile Include="JsonParser\ParserUnitTests.fs" />
     <Compile Include="JsonParser\ParserIntegrationTests.fs" />
     <Compile Include="JsonParser\UnparserTests.fs" />
-    <Compile Include="Program.fs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -29,6 +28,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\JsonParser\JsonParser.fsproj" />
     <ProjectReference Include="..\ParserCombinators\ParserCombinators.fsproj" />
   </ItemGroup>
 
