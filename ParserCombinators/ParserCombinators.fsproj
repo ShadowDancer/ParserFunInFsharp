@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.fs" />
+    <Compile Include="TextInput.fs" />
+    <Compile Include="Core.fs" />
+    <Compile Include="Characters.fs" />
+  </ItemGroup>
+
+</Project>

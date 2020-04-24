@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+    <GenerateProgramFile>false</GenerateProgramFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="ParserCombinators\Auxiliary.fs" />
+    <Compile Include="ParserCombinators\TextInputTests.fs" />
+    <Compile Include="ParserCombinators\CoreTests.fs" />
+    <Compile Include="ParserCombinators\CoreParseLogicalTests.fs" />
+    <Compile Include="ParserCombinators\CoreParseFunctionalTests.fs" />
+    <Compile Include="JsonParser\ParserUnitTests.fs" />
+    <Compile Include="JsonParser\ParserIntegrationTests.fs" />
+    <Compile Include="JsonParser\UnparserTests.fs" />
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.6.0" />
+    <PackageReference Include="xunit" Version="2.4.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ParserCombinators\ParserCombinators.fsproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Update="FSharp.Core" Version="4.7.1" />
+  </ItemGroup>
+
+</Project>
